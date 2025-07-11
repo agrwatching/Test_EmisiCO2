@@ -23,6 +23,7 @@ Aplikasi ini dapat memprediksi emisi CO2 yang dihasilkan oleh kendaraan berdasar
 | Database   | MySQL (via Laragon)                    |
 
 ---
+![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=agrwatching&layout=donut&theme=tokyonight)
 
 ## ✨ Fitur Unggulan
 - 🛬 Landing Page interaktif
