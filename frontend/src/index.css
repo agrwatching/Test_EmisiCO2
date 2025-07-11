@@ -1,0 +1,181 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Global body styling */
+body {
+  background-image: url("bgemisi.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+/* ============================== */
+/* 🔶 ANIMASI TOMBOL LOGIN        */
+/* ============================== */
+@keyframes login-hover-bounce {
+  0% {
+    width: 40px;
+  }
+  20% {
+    width: 100%;
+  }
+  40% {
+    width: 80%;
+  }
+  60% {
+    width: 100%;
+  }
+  80% {
+    width: 90%;
+  }
+  100% {
+    width: 100%;
+  }
+}
+
+@keyframes login-unhover-bounce {
+  0% {
+    width: 100%;
+  }
+  20% {
+    width: 0%;
+  }
+  40% {
+    width: 40px;
+  }
+  60% {
+    width: 30px;
+  }
+  100% {
+    width: 40px;
+  }
+}
+
+.login-hover-anim {
+  animation: login-hover-bounce 0.7s ease-out forwards;
+}
+
+.login-unhover-anim {
+  animation: login-unhover-bounce 0.7s ease-out forwards;
+}
+
+/* ============================== */
+/* 🔁 ANIMASI ARROW / IKON        */
+/* ============================== */
+@keyframes arrow-hover {
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(-30px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes arrow-leave {
+  0% {
+    transform: translateX(-30px);
+  }
+  50% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-30px);
+  }
+}
+
+.arrow-hover-anim {
+  animation: arrow-hover 1s ease-in-out forwards;
+}
+
+.arrow-leave-anim {
+  animation: arrow-leave 1s ease-in-out forwards;
+}
+
+/* ============================== */
+/* 🔁 ROTATE BOUNCE ARROW         */
+/* ============================== */
+@keyframes bounce-rotate-hover {
+  0% {
+    transform: rotate(180deg);
+  }
+  25% {
+    transform: rotate(290deg);
+  }
+  50% {
+    transform: rotate(240deg);
+  }
+  75% {
+    transform: rotate(280deg);
+  }
+  100% {
+    transform: rotate(270deg);
+  }
+}
+
+@keyframes bounce-rotate-leave {
+  0% {
+    transform: rotate(270deg);
+  }
+  25% {
+    transform: rotate(160deg);
+  }
+  50% {
+    transform: rotate(190deg);
+  }
+  75% {
+    transform: rotate(170deg);
+  }
+  100% {
+    transform: rotate(180deg);
+  }
+}
+
+.arrow-rotate-hover {
+  animation: bounce-rotate-hover 0.8s forwards;
+}
+
+.arrow-rotate-leave {
+  animation: bounce-rotate-leave 0.8s forwards;
+}
+
+/* ============================== */
+/* 📜 MARQUEE - EMISSION KNOWLEDGE */
+/* ============================== */
+.marquee {
+  display: flex;
+  width: max-content;
+  animation: scroll-left 30s linear infinite;
+}
+
+.marquee-content {
+  display: flex;
+}
+
+@keyframes scroll-left {
+  from {
+    transform: translateX(0%);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+/* Untuk title */
+.orgchart .node .title {
+  @apply bg-gray-800 text-white font-bold text-sm;
+}
+
+/* Untuk content (deskripsi role & profesi) */
+.orgchart .node .content {
+  @apply bg-gray-900 text-gray-300 text-xs whitespace-pre-line;
+}
+
+/* Gambar profil */
+.orgchart .node img {
+  @apply w-20 h-28 object-cover rounded-md border-2 border-white mb-2;
+}

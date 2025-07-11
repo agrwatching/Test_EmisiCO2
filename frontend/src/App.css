@@ -1,0 +1,13 @@
+.rounded-tr-4xl{
+  border-top-right-radius: 64px;
+}
+
+.py{
+  padding-top: 12px;
+  padding-bottom: 12px;
+}
+
+.rounded-pas{
+  border-top-left-radius: 60px;
+  border-bottom-left-radius: 60px;
+}
