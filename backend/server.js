@@ -106,6 +106,7 @@ app.post("/api/user/login", async (req, res) => {
       },
     });
   } catch (err) {
+    console.error("Login error:", err); // ← penting banget!
     res.status(500).json({ error: "Login gagal" });
   }
 });

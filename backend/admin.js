@@ -356,4 +356,5 @@ module.exports = (app) => {
       res.status(500).json({ error: "Gagal mengubah password user" });
     }
   });
+  
 };

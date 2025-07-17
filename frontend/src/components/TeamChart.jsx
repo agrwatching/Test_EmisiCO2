@@ -4,6 +4,7 @@ import rizal from "../assets/rizal.jpg";
 import diki from "../assets/diki.jpg";
 import kiki from "../assets/kiki.jpg";
 import mada from "../assets/mada.jpg";
+import syahrur from "../assets/syahrur.jpg";
 
 const Profil = ({ name, role, profession, img }) => (
   <div className="flex flex-col items-center text-white">
@@ -27,9 +28,9 @@ const TeamChart = () => (
       label={
         <Profil
           name="Syahrur Ramadhani"
-          role="Project Manager"
-          profession="Leader/Enterprice"
-          img={rizal} // pastikan ini foto Syahrur
+          role="Product Owner"
+          profession="Leader/Entrepreneur"
+          img={syahrur} // pastikan ini foto Syahrur
         />
       }
     >
